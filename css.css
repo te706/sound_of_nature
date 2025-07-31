@@ -1,0 +1,133 @@
+body{margin: 0%; 
+              /*  height: 200vh; */}
+            .head{background-color: rgb(95, 221, 158);
+                width: 100vw; height: 17vh;
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;}
+                                                                
+
+            #head{background-color: rgb(221, 221, 221);
+                width: 40vw; height: 5vh;
+               margin-top: 2vh;
+                padding-top: 3vh;
+                 border-radius: 50px;}    
+                 
+            #language{width: 70px; height: 70px;
+                       margin-top: 100px; }
+
+            p{margin-top: 0px;
+                margin-left: 10px;}
+
+            .sun , .mon{ width: 35px; height: 35px;}
+            .mon{margin-left: 2.5vw;
+                margin-top: 2vh;}                                        
+
+            .foot{background-color: rgb(221, 221, 221);
+                width: 20vw;
+                padding-left: 4vw;
+                padding-top: 2vh;
+                padding-bottom: 2vh;
+                margin-top: 35vh;
+                margin-left: 75vw;
+                border-radius: 50px;
+                position: fixed;}
+
+           img{width: 100px; height: 100px;
+                border-radius: 50px;}
+            #photo1,#photo2,#photo3,#photo4,#photo5,#circle,#PLAYvideo{cursor: pointer;}                                                                                                                   
+                                                               
+           #box{display: grid;
+             grid-template-columns: repeat(5,15vw);
+            margin-top: 10vh;
+            margin-left: 17vw; }
+                                                                                               
+            #PLAYvideo{width: 50px; height: 50px;}
+
+            .video{width: 500px; height: 250px;                                                                                               
+                    visibility: hidden;}
+
+                                                                .playing{ visibility: visible;
+                                                                background-color: aqua;}
+
+            .modBG{margin-top: -10vh;
+                    margin-left: 95vw;
+                    display: grid;
+                    grid-template-columns: repeat(2,2.5vw);
+                    grid-template-rows: repeat(2,5vh);}
+
+            .ellipse{background-color: rgb(221, 221, 221);
+                    width: 2vw; height: 11vh;
+                    border-radius: 50px;}
+
+            #circle{background-color: black;
+                    width: 2vw; height: 4.8vh;
+                    border-radius: 50px;
+                    }
+            
+            .circle{
+                position: relative;
+          animation: Anime 1s forwards;
+            }
+
+            @keyframes Anime {
+                0%{ top: 0vh;}
+                100%{top: 5vh;}
+            }
+        
+            .Circle{
+                position: relative;
+          animation: Animation 2s forwards;
+            }
+
+            @keyframes Animation {
+                0%{ top: 5vh;}
+                100%{top: 0vh;}
+            }
+                             
+           /*ขนาดเล็กพิเศษ*/ @media screen and (max-width:317px){
+                #head{height: 6vh; width: 60vw;}
+                .video{width: 200px; height: 120px;}
+                .foot{width: 40vw;
+                margin-left: 60vw;}
+                 img{width: 50px; height: 50px;} 
+                 #box{margin-top: 10vh;
+                    display: grid;
+                 grid-template-columns: repeat(3,15vw);
+                 margin-left: 30vw;}     
+                  /*body{background-color: rgb(43, 226, 83);}*/           
+                                                                  }
+
+/*ขนาดหน้าจอ โทรศัพท์*/       @media screen and (min-width:318px) and (max-width:480px){
+                #head{width: 60vw;}
+                .video{width: 300px; height: 150px;}
+                 .foot{width: 40vw;
+                margin-top: 30vh;
+                margin-left: 50vw;}
+                 #box{display: grid;
+             grid-template-columns: repeat(3,15vw);
+                margin-left: 30vw;}
+                 img{width: 60px; height: 60px;}    
+                 /*body{background-color: rgb(226, 43, 43);}*/                                                                                                                        
+}
+
+/*ขนาดหน้าจอ รอแก้ไข ขนาดหน้าจอ taplet*/
+            @media screen and (min-width:481px) and (max-width:769px){    
+                .video{width: 300px; height: 150px;}
+                 .foot{width: 40vw;
+                       margin-left: 55vw;}
+                 img{width: 70px; height: 70px;}   
+                 /*body{background-color: blueviolet;}*/                                                   
+            }
+
+ /*ขนาดกน้าจอ notbook 15in*/          
+  @media screen  and (min-width: 769px) and (max-width:1400px){
+        .video{width: 300px; height: 150px;}
+                .foot{margin-top: 30vh;}
+                body{background-color: aqua;}
+                                                                
+            }
+
+            /*ขนาดใหญ่*/
+            @media screen and (min-width:1400px){
+                #box{margin-top: 30vh;}
+            }

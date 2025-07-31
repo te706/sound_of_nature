@@ -1,0 +1,17 @@
+.HEAD{background-color: rgb(126, 126, 126); 
+    width: 100vw; height: 17vh;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.SUN{background-color: antiquewhite;
+    border-radius: 50px;}
+
+.MON{background-color: antiquewhite;
+    margin-left: 2.5vw;
+    margin-top: 2.5vh;
+    border-radius: 50px;}
+
+.photo{ background-color: aliceblue; }  
+.Box{color: aliceblue;}
+
+ .BODY{ background-color: rgb(39, 39, 39);}   
