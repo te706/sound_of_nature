@@ -123,7 +123,7 @@ body{margin: 0%;
   @media screen  and (min-width: 769px) and (max-width:1400px){
         .video{width: 300px; height: 150px;}
                 .foot{margin-top: 30vh;}
-                body{background-color: aqua;}
+                /*body{background-color: aqua;}*/
                                                                 
             }
 
